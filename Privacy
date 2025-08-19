@@ -1,0 +1,85 @@
+# Privacy Policy
+
+**Effective Date:** 3/19/2025
+
+This Privacy Policy explains how **Altairly** ("we," "our," or "us") collects, uses, and protects user data when you use our Chrome extension.
+
+By using our extension, you agree to the collection and use of information in accordance with this policy.
+
+---
+
+## 1. Information We Collect
+
+Our Chrome extension collects the following data to provide its functionality:
+
+- **Cart Total Information:** We collect your cart total amount when you visit certain Amazon pages (e.g., `/cart`, `/gp/cart`, and `/gp/buy/`) to display relevant savings and deals.  
+- **User Activity:** We may track user interactions with the extension, including clicks and whether the popup is opened.  
+- **Website Content:** We access page elements (e.g., cart total text) on supported Amazon pages to retrieve cart total amounts.
+
+**We do not collect any of the following:**  
+- Personally Identifiable Information (PII), such as your name, email address, or payment details.  
+- Health information, location data, or authentication credentials.  
+- Financial or payment information.  
+- Web history beyond the Amazon cart and checkout pages.
+
+---
+
+## 2. How We Use Collected Data
+
+The collected data is used solely to:  
+- Calculate and display your current Amazon cart total.  
+- Determine and highlight potential savings.  
+- Re-open the extension popup when the cart total changes.
+
+---
+
+## 3. Data Sharing and Security
+
+- **No Data Sharing:** We do not sell, share, or transfer user data to third parties for marketing or unrelated purposes.  
+- **Data Security:** Any data temporarily stored (e.g., cart total) is handled securely and is used only to perform the extension's intended functionality.  
+- **No Third-Party Tracking:** We do not use third-party analytics or tracking services.
+
+---
+
+## 4. Remote Code Usage
+
+Our extension does **not** use or load remote code. All functionality is handled locally by the extension scripts installed in your Chrome browser.
+
+---
+
+## 5. Permissions Explanation
+
+- **`activeTab`:** Used to interact with the current Amazon tab when the user is on relevant cart or checkout pages.  
+- **`scripting`:** Used to execute scripts on Amazon cart and checkout pages to extract cart total data.  
+- **`storage`:** Used to temporarily store the cart total value locally.  
+- **Host Permissions (e.g., `https://www.amazon.com/*`):** Required to access and extract data from supported Amazon pages where the cart total is displayed.
+
+---
+
+## 6. User Rights
+
+You have the right to:  
+- **Access:** Request the data collected by the extension.  
+- **Delete Data:** Clear your cart total information from local storage by disabling or uninstalling the extension.  
+- **Opt-out:** You can disable the extension at any time in Chrome.
+
+---
+
+## 7. Changes to This Privacy Policy
+
+We may update this privacy policy periodically. Changes will be reflected on this page with an updated effective date.
+
+---
+
+## 8. Contact Us
+
+For questions about this Privacy Policy, please contact us at:  
+**obliquitymarketing@gmail.com**
+
+---
+
+### Why Pin the Extension?
+
+Pinning the extension to your Chrome toolbar ensures quick access when you need to check your cart total and potential savings on Amazon. Click the puzzle icon (⚙️) in Chrome, and click the pin icon next to **Roundup to Free Shipping**.
+
+---
