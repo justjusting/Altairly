@@ -1,113 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Altairly – Free Chrome Extension</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9fafc;
-      color: #222;
-      text-align: center;
-    }
-    header {
-      background: #378de5;
-      color: white;
-      padding: 40px 20px;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.2em;
-    }
-    .container {
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-    }
-    .btn {
-      display: inline-block;
-      background: #ffd814;
-      color: #222;
-      text-decoration: none;
-      padding: 14px 28px;
-      font-size: 1.2em;
-      border-radius: 8px;
-      margin-top: 20px;
-      font-weight: bold;
-    }
-    .btn:hover {
-      background: #f3c400;
-    }
-    .features {
-      margin-top: 40px;
-      text-align: left;
-    }
-    .features h2 {
-      font-size: 1.6em;
-      margin-bottom: 12px;
-    }
-    .features ul {
-      list-style: none;
-      padding: 0;
-    }
-    .features li {
-      margin-bottom: 12px;
-      padding-left: 20px;
-      position: relative;
-    }
-    .features li:before {
-      content: "✔";
-      color: #0bbb37;
-      position: absolute;
-      left: 0;
-    }
-    footer {
-      margin-top: 60px;
-      padding: 20px;
-      background: #f1f1f1;
-      font-size: 0.9em;
-      color: #555;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Altairly – Free Chrome Extension</title>
+<style>
+  body {
+    font-family: 'Century Gothic', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0f2143; /* Dark Midnight Blue */
+    color: #ffffff;
+    text-align: center;
+  }
+  header {
+    background-color: #213768; /* Slightly lighter Dark Blue */
+    padding: 40px 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  header img {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 12px;
+  }
+  header h1 {
+    display: inline-block;
+    font-size: 2em;
+    color: #f3d01e; /* Gold */
+    margin: 0;
+    vertical-align: middle;
+  }
+  header p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #b0c4ff;
+  }
+  .container {
+    max-width: 720px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1e3568; /* Extension panel blue */
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  .btn {
+    display: inline-block;
+    background-color: #7b3fe4; /* Cosmic Purple */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 28px;
+    font-size: 1.2em;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #378de5; /* Hover blue */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  .features {
+    margin-top: 30px;
+    text-align: left;
+  }
+  .features h2 {
+    font-size: 1.6em;
+    color: #ffd814; /* Gold */
+    margin-bottom: 12px;
+  }
+  .features ul {
+    list-style: none;
+    padding: 0;
+  }
+  .features li {
+    margin-bottom: 12px;
+    padding-left: 24px;
+    position: relative;
+    font-size: 1em;
+  }
+  .features li:before {
+    content: "✔";
+    color: #0bbb37; /* Green check */
+    position: absolute;
+    left: 0;
+  }
+  footer {
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #b0c4ff;
+  }
+  footer a {
+    color: #3b98f5;
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+</style>
 </head>
 <body>
 
-  <header>
-    <h1>Altairly – Free Chrome Extension</h1>
-    <p>Smarter shopping. Save money. Reach free shipping faster.</p>
-    <a class="btn" href="https://chromewebstore.google.com/detail/altairly-shopping-helper/bddkchojjalmohakdmnhkneikoifjgad" target="_blank">
-      Add to Chrome
-    </a>
-  </header>
+<header>
+  <img src="icons/Altairly_logo.png" alt="Altairly Logo">
+  <h1>Altairly</h1>
+  <p>Smarter shopping. Save money. Unlock free shipping faster.</p>
+  <a class="btn" href="https://chromewebstore.google.com/detail/altairly-shopping-helper/bddkchojjalmohakdmnhkneikoifjgad" target="_blank">Add to Chrome</a>
+</header>
 
-  <div class="container">
-    <div class="features">
-      <h2>Why Altairly?</h2>
-      <ul>
-        <li>Get perfectly priced suggestions to hit free shipping thresholds</li>
-        <li>Discover new items that make your cart more efficient</li>
-        <li>Save time and avoid overspending</li>
-        <li>Free, safe, and easy to install from the Chrome Web Store</li>
-      </ul>
-    </div>
-
-    <p>
-      Altairly helps you shop smarter online by showing you recommendations that fit your cart perfectly. 
-      No sign-up required – just install and start saving.
-    </p>
-
-    <a class="btn" href="https://chromewebstore.google.com/detail/altairly-shopping-helper/bddkchojjalmohakdmnhkneikoifjgad" target="_blank">
-      Install Free Extension
-    </a>
+<div class="container">
+  <div class="features">
+    <h2>Why Altairly?</h2>
+    <ul>
+      <li>See the exact price needed to unlock free shipping</li>
+      <li>Discover perfectly priced items for your cart</li>
+      <li>Random product suggestions at any price</li>
+      <li>Safe, free, and easy to install</li>
+    </ul>
   </div>
 
-  <footer>
-    <p>© 2025 Altairly. Not affiliated with Amazon or other retailers.  
-    Available only on the official <a href="https://chromewebstore.google.com/detail/altairly-shopping-helper/bddkchojjalmohakdmnhkneikoifjgad" target="_blank">Chrome Web Store</a>.</p>
-  </footer>
+  <p>Altairly helps you shop smarter on Amazon by showing recommendations that fit your cart perfectly. No sign-up required — just install and start saving instantly.</p>
+
+  <a class="btn" href="https://chromewebstore.google.com/detail/altairly-shopping-helper/bddkchojjalmohakdmnhkneikoifjgad" target="_blank">Install Free Extension</a>
+</div>
+
+<footer>
+  <p>© 2025 Altairly. Not affiliated with Amazon or other retailers. Available only on the <a href="https://chromewebstore.google.com/detail/altairly-shopping-helper/bddkchojjalmohakdmnhkneikoifjgad" target="_blank">Chrome Web Store</a>.</p>
+</footer>
 
 </body>
 </html>
