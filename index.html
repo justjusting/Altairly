@@ -50,6 +50,65 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     line-height: .7em;
     margin-bottom: 33px;
   }
+
+@media (max-width: 600px) {
+  header {
+    padding: 30px 15px;       /* reduce top/bottom and side padding */
+    text-align: center;
+  }
+
+  header img.hero-image {
+    width: 80%;               /* scale down image */
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  header p {
+    font-size: 1em;           /* readable font size */
+    line-height: 1.5em !important;  /* increase spacing between lines */
+    max-width: 90%;           /* limit width so text doesn’t stretch too far */
+    margin: 10px auto;        /* separate paragraphs */
+  }
+
+  header a.btn {
+    font-size: 1.1em;
+    padding: 12px 24px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .feature-item {
+    flex-direction: column !important;  /* stack image above text */
+    align-items: center;                 /* center both image and text */
+    justify-content: center;             /* no spacing pushing sides */
+    padding: 30px 15px;                  /* breathing room on sides */
+    gap: 25px;                            /* spacing between image and text */
+  }
+
+  .feature-item img {
+    max-width: 90% !important;           /* fill more horizontal space */
+    width: auto;
+    height: auto;
+    margin: 0 auto;                       /* center image */
+  }
+
+  .feature-item div {
+    max-width: 95% !important;            /* allow text to go near edges */
+    text-align: center;                    /* center text for mobile */
+  }
+
+  .feature-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 12px;
+  }
+
+  .feature-item p {
+    font-size: 1.05em;
+    line-height: 1.5em;
+  }
+}
   .btn {
     display: inline-block;
     background-color: #ffd814;
