@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google Tag Manager -->
+   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -12,7 +12,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Altairly - Shopping Tool for Amazon</title>
 <style>
-  body {
+body {
     font-family: 'Century Gothic', sans-serif;
     margin: 0;
     padding: 0;
@@ -20,96 +20,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     background-color: #0f2143;
     color: #ffffff;
     line-height: 1.6;
-  }
+}
 
-  a {
+a {
     color: inherit;
     text-decoration: none;
-  }
+}
 
-  header {
+header {
     background-color: #213768;
     padding: 60px 20px;
     text-align: center;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-  }
-  header img {
+}
+
+header img {
     width: 80px;
     height: 80px;
     margin-bottom: 15px;
-  }
-  header h1 {
+}
+
+header h1 {
     font-size: 2.5em;
     color: #f3d01e;
     margin: 10px 0;
-  }
-  header p {
+}
+
+header p {
     font-size: 1.2em;
     color: #b0c4ff;
-    line-height: .7em;
-    margin-bottom: 33px;
-  }
-
-@media (max-width: 600px) {
-  header {
-    padding: 30px 15px;       /* reduce top/bottom and side padding */
-    text-align: center;
-  }
-
-  header img.hero-image {
-    width: 80%;               /* scale down image */
-    height: auto;
+    line-height: 1.4em;
     margin-bottom: 20px;
-  }
-
-  header p {
-    font-size: 1em;           /* readable font size */
-    line-height: 1.5em !important;  /* increase spacing between lines */
-    max-width: 90%;           /* limit width so text doesn’t stretch too far */
-    margin: 10px auto;        /* separate paragraphs */
-  }
-
-  header a.btn {
-    font-size: 1.1em;
-    padding: 12px 24px;
-  }
 }
 
-
-
-@media (max-width: 768px) {
-  .feature-item {
-    flex-direction: column !important;  /* stack image above text */
-    align-items: center;                 /* center both image and text */
-    justify-content: center;             /* no spacing pushing sides */
-    padding: 30px 15px;                  /* breathing room on sides */
-    gap: 25px;                            /* spacing between image and text */
-  }
-
-  .feature-item img {
-    max-width: 90% !important;           /* fill more horizontal space */
-    width: auto;
-    height: auto;
-    margin: 0 auto;                       /* center image */
-  }
-
-  .feature-item div {
-    max-width: 95% !important;            /* allow text to go near edges */
-    text-align: center;                    /* center text for mobile */
-  }
-
-  .feature-item h3 {
-    font-size: 1.8em;
-    margin-bottom: 12px;
-  }
-
-  .feature-item p {
-    font-size: 1.05em;
-    line-height: 1.5em;
-  }
-}
-  .btn {
+.btn {
     display: inline-block;
     background-color: #ffd814;
     color: #222;
@@ -118,12 +63,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     padding: 16px 32px;
     border-radius: 30px;
     transition: 0.3s;
-  }
-  .btn:hover {
-    background-color: #f3c400;
-  }
+    cursor: pointer;
+}
 
-  .hero-image {
+.btn:hover {
+    background-color: #f3c400;
+}
+
+.hero-image {
     width: 100%;
     max-width: 600px;
     height: auto;
@@ -131,189 +78,207 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     display: block;
     margin: 30px auto;
-  }
+}
 
-  .section {
+.section {
     max-width: 900px;
     margin: 50px auto;
     padding: 0 20px;
-  }
+}
 
-  .section h2 {
+.section h2 {
     font-size: 2em;
     color: #ffd814;
     margin-bottom: 20px;
     text-align: center;
-  }
+}
 
-  .feature-item {
+.feature-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 80px 10%;
     gap: 50px;
     border-radius: 20px;
-  }
+}
 
-  .feature-item img {
+.feature-item img {
     max-width: 45%;
     width: 100%;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  }
+}
 
-  .feature-item div {
+.feature-item div {
     max-width: 50%;
     text-align: left;
-  }
+}
 
-  .feature-item h3 {
+.feature-item h3 {
     font-size: 2em;
     margin-bottom: 15px;
     color: #ffd814;
-  }
+}
 
-  .feature-item p {
+.feature-item p {
     font-size: 1.2em;
     color: #b0c4ff;
-  }
+}
 
-  .screenshots {
+.screenshots {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin-top: 30px;
-  }
+}
 
-  .screenshots img {
+.screenshots img {
     max-width: 320px;
     width: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     transition: transform 0.3s;
-  }
+}
 
-  .screenshots img:hover {
+.screenshots img:hover {
     transform: scale(1.05);
-  }
+}
 
-    .info-container {
-            background-color: #213768; /* Slightly lighter Dark Blue */
-            border-radius: 12px;
-            padding: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-        }
-        #cart-total, #amount-needed, #free-shipping-threshold {
-            margin-bottom: 10px;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        #cart-total {
-            color: #ffffff;
-        }
-        #amount-needed {
-            color: #f3d01e; /* Gold */
-            margin-bottom: 0px;
-        }
-        #free-shipping-threshold {
-            color: #3b98f5; /* Good Blue */
-        }
-        .progress-container {
-            width: 100%;
-            height: 22px;
-            background-color: #2a498d; /* Slightly darker blue */
-            border-radius: 12px;
-            overflow: hidden;
-            margin: 12px 0;
-        }
-        #progress-bar {
-            width: 0%;
-            height: 100%;
-            background-color: #3b98f5; /* Green */
-            transition: width 0.4s ease;
-            color: #ffffff;
-            text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
-            text-align: center;
-            line-height: 22px;
-            font-size: 13px;
-            font-weight: bold;
-            border-radius: 12px 0 0 12px;
-        }
-        button {
-            width: 100%;
-            padding: 14px;
-            background-color: #7b3fe4; /* Cosmic Purple */
-            color: #ffffff;
-            border: none;
-            border-radius: 30px;
-            font-size: 16px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin-bottom: 10px;
-        }
-        button:hover {
-            background-color: #378de5; /* Good Blue hover */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-        button.success {
-            background-color: #0bbb37; /* Green */
-        }
-        button.success:hover {
-            background-color: #09a52c; /* Darker Green */
-        }
-        .tooltip {
-            position: relative;
-            display: inline-block;
-        }
-        .tooltip .tooltip-text {
-            visibility: hidden;
-            width: 220px;
-            background-color: #233c74; /* Blue shade */
-            color: #ffffff;
-            text-align: center;
-            border-radius: 8px;
-            padding: 8px;
-            position: absolute;
-            z-index: 1;
-            bottom: 135%;
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .tooltip:hover .tooltip-text {
-            visibility: visible;
-            opacity: 1;
-        }
-        input[type="number"] {
-            margin-top: 10px;
-            width: 80%;
-            padding: 10px;
-            border-radius: 12px;
-            border: 1px solid #378de5; /* Good Blue border */
-            font-size: 14px;
-            background-color: #1e3568;
-            color: #ffffff;
-        }
-        input[type="number"]::placeholder {
-            color: #b0c4ff;
-        }
+.info-container {
+    background-color: #213768;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
 
-      .price-widget-container {
+#cart-total {
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#amount-needed {
+    color: #f3d01e;
+    font-weight: bold;
+}
+
+#free-shipping-threshold {
+    color: #3b98f5;
+    font-weight: bold;
+}
+
+.progress-container {
+    width: 100%;
+    height: 22px;
+    background-color: #2a498d;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 12px 0;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #3b98f5;
+    transition: width 0.4s ease;
+    text-align: center;
+    line-height: 22px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 12px 0 0 12px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #7b3fe4;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #378de5;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+button.success {
+    background-color: #0bbb37;
+}
+
+button.success:hover {
+    background-color: #09a52c;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 220px;
+    background-color: #233c74;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 8px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 135%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+input[type="number"], input[type="text"] {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #378de5;
+    font-size: 14px;
+    background-color: #1e3568;
+    color: #ffffff;
+}
+
+input[type="number"]::placeholder, input[type="text"]::placeholder {
+    color: #b0c4ff;
+}
+
+.widget-logo {
+    max-width: 40px;
+    max-height: 40px;
+    width: auto;
+    height: auto;
+}
+
+.price-widget-container {
     max-width: 320px;
-    margin: 20px auto;       /* smaller top/bottom gap */
-    padding: 30px 20px;      /* more padding for emphasis */
-    background-color: #0f2143; /* Alternate dark blue like your second feature section */
+    margin: 20px auto;
+    padding: 20px 20px;
+    background-color: #213768;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     text-align: center;
 }
 
-
+/* Widget header */
 .price-widget-container .header {
     display: flex;
     justify-content: center;
@@ -328,68 +293,155 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     margin: 0;
 }
 
-        /* Chrome, Safari, Edge, Opera */
+/* Switch/Slider - same as Date tab */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 26px;
+    margin: 0 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #378de5;
+    transition: 0.4s;
+    border-radius: 26px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #7b3fe4;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+/* Tabs - clean and compact */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #378de5;
+}
+
+.tab-button {
+    flex: 1;
+    padding: 6px 8px;
+    background: #0f2143;
+    color: #b0c4ff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.95em;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+    border-radius: 4px 4px 0 0;
+    margin-right: 4px;
+}
+
+.tab-button:last-child {
+    margin-right: 0;
+}
+
+.tab-button.active {
+    background-color: #0f2143;
+    color: #ffffff;
+    border-bottom: 2px solid #ffd814;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Remove number spinner */
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-/* Firefox */
 input[type=number] {
     -moz-appearance: textfield;
 }
 
-
-/* Constrain the logo image */
-.widget-logo {
-    max-width: 40px;      /* or smaller if needed */
-    max-height: 40px;
-    width: auto;
-    height: auto;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feature-item {
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 15px;
+        gap: 25px;
+    }
+    .feature-item img {
+        max-width: 90% !important;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+    .feature-item div {
+        max-width: 95% !important;
+        text-align: center;
+    }
+    .feature-item h3 {
+        font-size: 1.8em;
+        margin-bottom: 12px;
+    }
+    .feature-item p {
+        font-size: 1.05em;
+        line-height: 1.5em;
+    }
 }
 
-/* Slider styling */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 26px;
+@media (max-width: 600px) {
+    header {
+        padding: 30px 15px;
+        text-align: center;
+    }
+    header img.hero-image {
+        width: 80%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    header p {
+        font-size: 1em;
+        line-height: 1.5em !important;
+        max-width: 90%;
+        margin: 10px auto;
+    }
+    header a.btn {
+        font-size: 1.1em;
+        padding: 12px 24px;
+    }
 }
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: #378de5;
-  transition: 0.4s;
-  border-radius: 26px;
-}
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 22px;
-  width: 22px;
-  left: 2px;
-  bottom: 2px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-input:checked + .slider {
-  background-color: #7b3fe4;
-}
-input:checked + .slider:before {
-  transform: translateX(24px);
-}
-
-
 </style>
-    <!-- Google tag (gtag.js) -->
+ <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZHJS8QRCST"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -424,6 +476,7 @@ function gtag_report_conversion(url) {
   return false;
 }
 </script>
+
 </head>
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -442,86 +495,184 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </header>
 
 <div class="price-widget-container">
-    <div class="header">
-        <img src="src/Altarly_logo.png" alt="Logo" class="widget-logo">
-        <h1>Altairly</h1>
+  <div class="header">
+    <img src="src/Altarly_logo.png" alt="Logo" class="widget-logo">
+    <h1>Altairly</h1>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <div class="tab-button active" data-tab="date">By Date</div>
+    <div class="tab-button" data-tab="advanced">Advanced Search</div>
+  </div>
+
+  <!-- Date Tab -->
+  <div class="tab-content active" id="date">
+    <div class="info-container">
+      <div id="cart-total">
+        Today's Date Search $0.00
+      </div>
+      <div class="date-toggle">
+        <span id="date-format-label">8/20</span>
+        <label class="switch">
+          <input type="checkbox" id="dateToggle">
+          <span class="slider"></span>
+        </label>
+        <span id="date-format-label-alt">20/8</span>
+      </div>
+    </div>
+    <button id="search-items">Search Amazon $0.00</button>
+  </div>
+
+  <!-- Advanced Search Tab -->
+  <div class="tab-content" id="advanced">
+        <div class="price-toggle info-container" style="margin: 12px 0;">
+      <span>Exact Price</span>
+      <label class="switch">
+        <input type="checkbox" id="priceToggle">
+        <span class="slider"></span>
+      </label>
+      <span>Price Range</span>
+    </div>
+<input type="text" id="search-term" class="input-field" placeholder="Enter search term...">
+    <div id="exactPrice" style="margin-bottom: 12px;">
+      <input type="number" class="input-field" id="exact-price" placeholder="Enter price">
     </div>
 
-    <div class="info-container" style="display:flex; flex-direction:column; align-items:center; gap:12px; margin-bottom:20px;">
-        <div id="cart-total" style="font-size:1.1em; font-weight:bold; text-align:center;">
-            Today's Date Search $0.00
-        </div>
-        <div style="display:flex; align-items:center; gap:8px; font-size:1.1em; font-weight:bold; color:#ffffff;">
-            <span id="date-format-label">8/20</span>
-            <label class="switch">
-                <input type="checkbox" id="dateToggle">
-                <span class="slider"></span>
-            </label>
-            <span id="date-format-label-alt">20/8</span>
-        </div>
+    <div id="priceRange" style="display:none; flex-direction: row; gap: 8px; margin-bottom: 12px;">
+      <input type="number" class="input-field" id="price-min" placeholder="Min price" style="flex:1;">
+      <input type="number" class="input-field" id="price-max" placeholder="Max price" style="flex:1;">
     </div>
 
-    <button id="search-items" style="margin-bottom:16px;">Search Amazon $0.00</button>
-
-    <input type="number" id="manualPrice" placeholder="Enter your own price" style="margin-top:10px;">
+    <button id="advanced-search-btn">Search Amazon $0.00</button>
+  </div>
 </div>
 
 <script>
+// ---- DATE TAB ----
 const dateToggle = document.getElementById("dateToggle");
-const manualPrice = document.getElementById("manualPrice");
 const amazonButton = document.getElementById("search-items");
 const cartTotal = document.getElementById("cart-total");
 const dateLabel = document.getElementById("date-format-label");
 const dateLabelAlt = document.getElementById("date-format-label-alt");
 
-// Return numbers without leading zeros, always with 2 decimals
 function getTodayPrice(format = "MMDD") {
-    const today = new Date();
-    const month = today.getMonth() + 1;
-    const day = today.getDate();
-    let value;
-    if (format === "MMDD") value = month + day / 100;
-    else value = day + month / 100;
-    return value.toFixed(2);
+  const today = new Date();
+  const month = today.getMonth() + 1;
+  const day = today.getDate();
+  let value;
+  if (format === "MMDD") value = month + day / 100;
+  else value = day + month / 100;
+  return value.toFixed(2);
 }
 
 function updateWidget() {
-    // Update date price only
-    const datePrice = getTodayPrice(dateToggle.checked ? "DDMM" : "MMDD");
-    cartTotal.textContent = `Today's Date Search $${datePrice}`;
+  const datePrice = getTodayPrice(dateToggle.checked ? "DDMM" : "MMDD");
+  cartTotal.textContent = `Today's Date Search $${datePrice}`;
+  amazonButton.textContent = `Search Amazon $${datePrice}`;
 
-    // Update button price based on manual input or date
-    const buttonPrice = manualPrice.value ? parseFloat(manualPrice.value).toFixed(2) : datePrice;
-    amazonButton.textContent = `Search Amazon $${buttonPrice}`;
-
-    // Update dynamic date labels
-    const today = new Date();
-    const month = today.getMonth() + 1;
-    const day = today.getDate();
-    dateLabel.textContent = `${month}/${day}`;
-    dateLabelAlt.textContent = `${day}/${month}`;
+  const today = new Date();
+  const month = today.getMonth() + 1;
+  const day = today.getDate();
+  dateLabel.textContent = `${month}/${day}`;
+  dateLabelAlt.textContent = `${day}/${month}`;
 }
 
-// Initial load
 updateWidget();
-
-// Event listeners
 dateToggle.addEventListener("change", updateWidget);
-manualPrice.addEventListener("input", updateWidget);
 
-// Amazon button click
 amazonButton.addEventListener("click", () => {
-    const priceVal = manualPrice.value ? parseFloat(manualPrice.value).toFixed(2) : getTodayPrice(dateToggle.checked ? "DDMM" : "MMDD");
-    
-    // Convert dollars to cents
-    const priceInCents = Math.round(parseFloat(priceVal) * 100);
+  const priceVal = getTodayPrice(dateToggle.checked ? "DDMM" : "MMDD");
+  const priceInCents = Math.round(parseFloat(priceVal) * 100);
 
-    // Build the working URL
-    const searchUrl = `https://www.amazon.com/s?rh=p_36%3A${priceInCents}-${priceInCents}%2Cp_76%3A2661625011&s=review-rank&dc&language=en_US&linkCode=ll2&linkId=43dfb7a3fc4579ba1c7f5700133a7ad4&qid=1742420852&rnid=2661623011&tag=obliquityma09-20&ref=sr_nr_p_76_1&ds=v1%3A79nMX8ksAEs9UDjAGX5bYZmvWI0GLBF5iJKc8emuHLs`;
+  const affiliate = "&tag=obliquityma09-20"; // your affiliate tag
+  const freeShippingFilter = "p_76%3A1249146011"; // Free shipping filter
+  const priceFilter = `p_36%3A${priceInCents}-${priceInCents}`;
+  
+  const rhParam = `${priceFilter}%2C${freeShippingFilter}`;
 
-    window.open(searchUrl, "_blank");
+  const searchUrl = `https://www.amazon.com/s?rh=${rhParam}&dc&language=en_US&ds=v1%3AZ6S2wZb21N0BGY06WmJqaTEiI5nj9FuH%2B6eo1KEOaTI&qid=${Math.floor(Date.now()/1000)}&ref=sr_nr_p_76_1${affiliate}`;
+
+  window.open(searchUrl, "_blank");
+});
+
+// ---- ADVANCED TAB ----
+const priceToggle = document.getElementById("priceToggle");
+const exactPriceDiv = document.getElementById("exactPrice");
+const priceRangeDiv = document.getElementById("priceRange");
+const searchTerm = document.getElementById("search-term");
+const advancedBtn = document.getElementById("advanced-search-btn");
+const exactPriceInput = document.getElementById("exact-price");
+const minPriceInput = document.getElementById("price-min");
+const maxPriceInput = document.getElementById("price-max");
+
+function updatePriceDisplay() {
+  if (!priceToggle.checked) {
+    exactPriceDiv.style.display = "block";
+    priceRangeDiv.style.display = "none";
+  } else {
+    exactPriceDiv.style.display = "none";
+    priceRangeDiv.style.display = "flex";
+  }
+  updateAdvancedButton();
+}
+
+function updateAdvancedButton() {
+  let priceText = "";
+  if (!priceToggle.checked) {
+    const exact = exactPriceInput.value;
+    priceText = exact ? `$${parseFloat(exact).toFixed(2)}` : "$0.00";
+  } else {
+    const min = minPriceInput.value;
+    const max = maxPriceInput.value;
+    priceText = (min && max) ? `$${parseFloat(min).toFixed(2)} - $${parseFloat(max).toFixed(2)}` : "$0.00";
+  }
+  advancedBtn.textContent = `Search Amazon ${priceText}`;
+}
+
+updatePriceDisplay();
+priceToggle.addEventListener("change", updatePriceDisplay);
+exactPriceInput.addEventListener("input", updateAdvancedButton);
+minPriceInput.addEventListener("input", updateAdvancedButton);
+maxPriceInput.addEventListener("input", updateAdvancedButton);
+
+advancedBtn.addEventListener("click", () => {
+  const term = encodeURIComponent(searchTerm.value.trim());
+  let priceFilter = "";
+  const affiliate = "&tag=obliquityma09-20"; // your affiliate tag
+  const freeShippingFilter = "p_76%3A1249146011"; // Free shipping filter
+
+  if (!priceToggle.checked) {
+    const exact = exactPriceInput.value;
+    if (exact) priceFilter = `p_36%3A${Math.round(exact*100)}-${Math.round(exact*100)}`;
+  } else {
+    const min = minPriceInput.value;
+    const max = maxPriceInput.value;
+    if (min && max) priceFilter = `p_36%3A${Math.round(min*100)}-${Math.round(max*100)}`;
+  }
+
+  const rhParam = priceFilter ? `${priceFilter}%2C${freeShippingFilter}` : freeShippingFilter;
+
+  const searchUrl = `https://www.amazon.com/s?k=${term}&rh=${rhParam}&dc&language=en_US&ds=v1%3AZ6S2wZb21N0BGY06WmJqaTEiI5nj9FuH%2B6eo1KEOaTI&qid=${Math.floor(Date.now()/1000)}&ref=sr_nr_p_76_1${affiliate}`;
+
+  window.open(searchUrl, "_blank");
+});
+
+// ---- TABS ----
+const tabButtons = document.querySelectorAll(".tab-button");
+const tabContents = document.querySelectorAll(".tab-content");
+
+tabButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    tabButtons.forEach(b => b.classList.remove("active"));
+    tabContents.forEach(c => c.classList.remove("active"));
+    btn.classList.add("active");
+    document.getElementById(btn.dataset.tab).classList.add("active");
+  });
 });
 </script>
+
+
 
 
 <!-- Feature Sections -->
@@ -556,16 +707,12 @@ amazonButton.addEventListener("click", () => {
 </div>
 
 <footer style="text-align:center; margin:50px 20px 20px;">
-  <p>© 2025 Altairly. Not affiliated with Amazon or other retailers. This site uses affiliate links. Available only on the <a href="https://chromewebstore.google.com/detail/altairly-shopping-helper/bddkchojjalmohakdmnhkneikoifjgad" target="_blank">Chrome Web Store</a>.</p>
+  <p>© 2025 Altairly. Not affiliated with Amazon or other retailers. Available only on the <a href="https://chromewebstore.google.com/detail/altairly-shopping-helper/bddkchojjalmohakdmnhkneikoifjgad" target="_blank">Chrome Web Store</a>.</p>
   <a href="privacy.html" target="_blank">Privacy Policy</a>
 </footer>
 
 </body>
 </html>
-
-
-
-
 
 
 
